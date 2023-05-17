@@ -10,15 +10,12 @@ const alchemy = new Alchemy(config);
 
 const main = async () => {
   // Contract address
-  const address = "0xa20cf9b0874c3e46b344deaeea9c2e0c3e1db37d";
-  const address2 = "0xCB0477d1Af5b8b05795D89D59F4667b59eAE9244";
+  const address = "0xCB0477d1Af5b8b05795D89D59F4667b59eAE9244";
 
   // Get owners
-  const owners1 = await alchemy.nft.getOwnersForContract(address);
-  const owners2 = await alchemy.nft.getOwnersForContract(address2);
+  const owners = await alchemy.nft.getOwnersForContract(address);
 
-  await writeListToFile(owners1, "honey_jar.json");
-  await writeListToFile(owners2, "honey_comb.json");
+  await writeListToFile(owners, "honey-comb/holders.json");
 };
 
 async function writeListToFile(list, fileName) {
