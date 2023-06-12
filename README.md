@@ -2,10 +2,21 @@
 
 Currently our vault limits the access to users who meets one of the criteria.
 
+Internal List
+
 - Orange Finance Team
+
+Lab List
+
+- Lab Members
+- Internal List
+
+Products List
+
 - Alpha Orange Crew
 - Degen Beacon Holder
-- Honey Comb Holder (new)
+- Honey Comb Holder
+- Lab List
 
 ### Orange Finance Team
 
