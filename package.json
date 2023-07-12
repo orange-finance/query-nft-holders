@@ -2,8 +2,9 @@
   "name": "query-nft-holders",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +13,13 @@
   "dependencies": {
     "alchemy-sdk": "^2.8.3",
     "axios": "^1.4.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "ethers": "^6.6.3",
+    "merkletreejs": "^0.3.10"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
   }
 }
