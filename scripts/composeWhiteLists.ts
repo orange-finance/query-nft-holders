@@ -12,6 +12,7 @@ const jsonFiles: { [key: string]: string } = {
   internal: "../lists/internal/list.json",
   strategist: "../lists/strategist/list.json",
   xGrail: "../lists/xGrail/list.json",
+  xGrailAllocator: "../lists/xGrailAllocator/list.json",
 };
 
 function mergeJsonFiles(fileKeys: string[]): AddressObject[] {
@@ -35,4 +36,11 @@ function createFileForPurpose(purpose: string, fileKeys: string[]) {
 
 createFileForPurpose("floatLocker", ["internal", "alphaOrangeCrew", "strategist"]);
 createFileForPurpose("product", ["internal", "alphaOrangeCrew", "degenBeacon", "honeyComb"]);
-createFileForPurpose("camelot", ["internal", "alphaOrangeCrew", "xGrail", "degenBeacon", "honeyComb"]);
+createFileForPurpose("camelot", [
+  "internal",
+  "alphaOrangeCrew",
+  "xGrail",
+  "xGrailAllocator",
+  "degenBeacon",
+  "honeyComb",
+]);
