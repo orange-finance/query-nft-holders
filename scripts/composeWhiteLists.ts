@@ -16,12 +16,17 @@ const jsonFiles: { [key: string]: string } = {
 };
 
 function mergeJsonFiles(fileKeys: string[]): AddressObject[] {
-  let result: AddressObject[] = [];
+  let resultSet = new Set<string>();
   for (let key of fileKeys) {
     let data = fs.readFileSync(path.resolve(__dirname, jsonFiles[key]), "utf8");
-    result = [...result, ...(Object.values(JSON.parse(data)) as AddressObject[])];
+    let addresses = Object.values(JSON.parse(data)) as AddressObject[];
+    addresses.forEach((addressObject) => {
+      // Convert the address to lowercase to avoid case sensitive duplicates
+      resultSet.add(addressObject.address.toLowerCase());
+    });
   }
-  return result;
+  // Convert the set back to the AddressObject[] format
+  return Array.from(resultSet).map((address) => ({ address }));
 }
 
 function formatJson(data: AddressObject[]): string {
