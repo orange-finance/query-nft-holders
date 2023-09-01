@@ -1,5 +1,6 @@
 const { Alchemy, Network } = require("alchemy-sdk");
 const fs = require("fs/promises");
+const path = require("path");
 require("dotenv").config();
 
 const config = {
@@ -15,7 +16,7 @@ const main = async () => {
   // Get owners
   const owners = await alchemy.nft.getOwnersForContract(address);
 
-  await writeListToFile(owners, "honey-comb/holders.json");
+  await writeListToFile(owners, path.resolve(__dirname, `./list.json`));
 };
 
 async function writeListToFile(list, fileName) {

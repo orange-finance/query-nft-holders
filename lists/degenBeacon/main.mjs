@@ -1,5 +1,6 @@
 import axios from "axios";
 import fs from "fs/promises";
+import path from "path";
 
 async function fetchBeacons(cursor = null) {
   const params = {
@@ -56,10 +57,10 @@ function sleep(ms) {
 (async () => {
   try {
     const beacons = await getAllBeacons();
-    await writeBeaconsToFile(beacons, "degen-beacon/holders-with-args.json");
+    //await writeBeaconsToFile(beacons, "degenBeacon/listWithArgs.json");
 
     const simplifiedBeacons = beacons.map((beacon) => ({ address: beacon.address }));
-    await writeBeaconsToFile(simplifiedBeacons, "degen-beacon/holders.json");
+    await writeBeaconsToFile(simplifiedBeacons, "./lists/degenBeacon/list.json");
   } catch (error) {
     console.error("Failed to fetch all beacons:", error);
   }

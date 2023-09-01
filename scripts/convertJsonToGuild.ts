@@ -6,7 +6,6 @@ const jsonFiles: { [key: string]: string } = {
   degenBeacon: "../lists/degenBeacon/list.json",
   honeyComb: "../lists/honeyComb/list.json",
   internal: "../lists/internal/list.json",
-  strategist: "../lists/strategist/list.json",
   xGrail: "../lists/xGrail/list.json",
   xGrailAllocator: "../lists/xGrailAllocator/list.json",
 };
@@ -16,7 +15,6 @@ const guildFiles: { [key: string]: string } = {
   degenBeacon: "../lists/degenBeacon/guild.csv",
   honeyComb: "../lists/honeyComb/guild.csv",
   internal: "../lists/internal/guild.csv",
-  strategist: "../lists/strategist/guild.csv",
   xGrail: "../lists/xGrail/guild.csv",
   xGrailAllocator: "../lists/xGrailAllocator/guild.csv",
 };
@@ -50,6 +48,5 @@ convertFile("alphaOrangeCrew");
 convertFile("degenBeacon");
 convertFile("honeyComb");
 convertFile("internal");
-convertFile("strategist");
 convertFile("xGrail");
 convertFile("xGrailAllocator");

@@ -1,6 +1,24 @@
 import * as fs from "fs";
 import * as path from "path";
 
+const csvFiles: { [key: string]: string } = {
+  alphaOrangeCrew: "../lists/alphaOrangeCrew/list.csv",
+  degenBeacon: "../lists/degenBeacon/list.csv",
+  honeyComb: "../lists/honeyComb/list.csv",
+  internal: "../lists/internal/list.csv",
+  xGrail: "../lists/xGrail/list.csv",
+  xGrailAllocator: "../lists/xGrailAllocator/list.csv",
+};
+
+const guildFiles: { [key: string]: string } = {
+  alphaOrangeCrew: "../lists/alphaOrangeCrew/list.json",
+  degenBeacon: "../lists/degenBeacon/list.json",
+  honeyComb: "../lists/honeyComb/list.json",
+  internal: "../lists/internal/list.json",
+  xGrail: "../lists/xGrail/list.json",
+  xGrailAllocator: "../lists/xGrailAllocator/list.json",
+};
+
 type CSVToJSON = (csv: string) => Array<{ address: string }>;
 
 const csvToJSON: CSVToJSON = (csv) => {
@@ -23,8 +41,15 @@ const csvToJSON: CSVToJSON = (csv) => {
   return result;
 };
 
-const csvFilePath = path.resolve(__dirname, "./list2.csv");
-const csv = fs.readFileSync(csvFilePath, "utf-8");
+function convertFile(purpose: string): void {
+  const absoluteInputPath = path.resolve(__dirname, csvFiles[purpose]);
 
-const jsonData = csvToJSON(csv);
-fs.writeFileSync(path.resolve(__dirname, `./list2.json`), JSON.stringify(jsonData, null, 2)); // 2 spaces for indentation
+  const csv = fs.readFileSync(absoluteInputPath, "utf-8");
+  const jsonData = csvToJSON(csv);
+
+  const absoluteOutputPath = path.resolve(__dirname, guildFiles[purpose]);
+  fs.writeFileSync(absoluteOutputPath, JSON.stringify(jsonData, null, 2));
+}
+
+convertFile("xGrail");
+convertFile("xGrailAllocator");

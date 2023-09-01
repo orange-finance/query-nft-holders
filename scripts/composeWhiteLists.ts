@@ -10,7 +10,6 @@ const jsonFiles: { [key: string]: string } = {
   degenBeacon: "../lists/degenBeacon/list.json",
   honeyComb: "../lists/honeyComb/list.json",
   internal: "../lists/internal/list.json",
-  strategist: "../lists/strategist/list.json",
   xGrail: "../lists/xGrail/list.json",
   xGrailAllocator: "../lists/xGrailAllocator/list.json",
 };
@@ -39,7 +38,7 @@ function createFileForPurpose(purpose: string, fileKeys: string[]) {
   fs.writeFileSync(path.resolve(__dirname, `../WL/${purpose}.json`), formatJson(data));
 }
 
-createFileForPurpose("floatLocker", ["internal", "alphaOrangeCrew", "strategist"]);
+createFileForPurpose("floatLocker", ["internal", "alphaOrangeCrew"]);
 createFileForPurpose("product", ["internal", "alphaOrangeCrew", "degenBeacon", "honeyComb"]);
 createFileForPurpose("camelot", [
   "internal",
