@@ -424,5 +424,7 @@
   { "address": "0x81835a4c2c5802f64fe817c2bbebe5377d9e15c0" },
   { "address": "0xC0eB311C2f846BD359ed8eAA9a766D5E4736846A" },
   { "address": "0x0f74CdA51fFfd1DC29B12d6BfD682CF4856446E5" },
-  { "address": "0xa703f01FC55202c4c8c50715df06789Bfd26D0Fb" }
+  { "address": "0xa703f01FC55202c4c8c50715df06789Bfd26D0Fb" },
+  { "address": "0x8aFBE6e6dB0eD85077eF944Dd152290cB65D4D6d" },
+  { "address": "0x8Ee47ea23D698f3d5E7EABAC0D01f23e10f79A8F" }
 ]
