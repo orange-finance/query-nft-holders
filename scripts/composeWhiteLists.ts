@@ -38,7 +38,7 @@ function createFileForPurpose(purpose: string, fileKeys: string[]) {
   fs.writeFileSync(path.resolve(__dirname, `../WL/${purpose}.json`), formatJson(data));
 }
 
-createFileForPurpose("product", ["internal", "alphaOrangeCrew", "degenBeacon", "honeyComb"]);
+createFileForPurpose("alphacrew", ["internal", "alphaOrangeCrew"]);
 createFileForPurpose("camelot", [
   "internal",
   "alphaOrangeCrew",
