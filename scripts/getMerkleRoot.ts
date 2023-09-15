@@ -11,7 +11,7 @@ async function hashed(target: any[]) {
 }
 
 async function main() {
-  const jsonFilePath = path.resolve(__dirname, "../WL/camelot.json"); //update here to change list to import
+  const jsonFilePath = path.resolve(__dirname, "../WL/alphacrew.json"); //update here to change list to import
   const jsonData = fs.readFileSync(jsonFilePath, "utf-8");
   const list = JSON.parse(jsonData);
 
