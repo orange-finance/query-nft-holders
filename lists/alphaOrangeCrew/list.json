@@ -450,5 +450,7 @@
   { "address": "0x555eced709352759Ed0f1317dfC0a5FEf1310e60" },
   { "address": "0x44cddd49c6098b77108336fc5f10a4cc9037d764" },
   { "address": "0x18FC96c4f72d6dacBf3Ec24c4f9e6b7a0658F709" },
-  { "address": "0x4F53de29fD899305eDb6511319F0243B98c9ac6f" }
+  { "address": "0x4F53de29fD899305eDb6511319F0243B98c9ac6f" },
+  { "address": "0x1AC143aeFCE0219798bC3AF001240b601831255c" },
+  { "address": "0xdDB533574D0EFB7c0a6A4e080989320f47f107c3" }
 ]

@@ -62,6 +62,7 @@
   {"address":"0x8ab83d869f2bc250b781d26f6584fd5c562fdd9d"},
   {"address":"0x444058aecc3117ec602dedd1c1eeecbd64c90720"},
   {"address":"0xdc382cdf2a25790f535a518ec26958c227e9dcf2"},
+  {"address":"0xda913af1af16187e03a06877e1080b7440b118a5"},
   {"address":"0xded5d8c6b271a48f3b9ba20e8aa761a6baa2fac9"},
   {"address":"0x966440e3a76c2d00a9e119854467c1d6903e8fc0"},
   {"address":"0x2eafe610e240f977aee740473dfc912f6150870b"},
@@ -495,5 +496,7 @@
   {"address":"0x555eced709352759ed0f1317dfc0a5fef1310e60"},
   {"address":"0x44cddd49c6098b77108336fc5f10a4cc9037d764"},
   {"address":"0x18fc96c4f72d6dacbf3ec24c4f9e6b7a0658f709"},
-  {"address":"0x4f53de29fd899305edb6511319f0243b98c9ac6f"}
+  {"address":"0x4f53de29fd899305edb6511319f0243b98c9ac6f"},
+  {"address":"0x1ac143aefce0219798bc3af001240b601831255c"},
+  {"address":"0xddb533574d0efb7c0a6a4e080989320f47f107c3"}
 ]
